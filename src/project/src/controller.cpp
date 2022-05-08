@@ -1,4 +1,4 @@
-
+//INCLUDING srv  
 
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
@@ -15,7 +15,7 @@ int main (int argc, char **argv)
 ros::init(argc, argv,"program");
 ros::NodeHandle nh;
 
-ros::ServiceClient client1 = nh.serviceClient<project::racetrack>("/racetrack");
+ros::ServiceClient client1 = nh.serviceClient<project::racetrack>("/racetrack"); // using srv file to publish speed type.
 
 project::racetrack server1;
 
@@ -30,7 +30,7 @@ while (ros::ok())
   
   if(button == 'w')
   {  
-    server1.request.controller = button;
+    server1.request.controller = button; // requesting from program and then executing the speed control commands.
     client1.waitForExistence();
     
     if (client1.call(server1))
