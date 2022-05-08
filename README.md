@@ -40,6 +40,7 @@ The nodes work as shown from the rqt_graph:
 ![Rqt_graph](https://github.com/aayush11101998/Research-Track-1-assignment-2/blob/master/Images/rqt_graph%20rstrack%20ass2.png)
 
 The stageros node is from the folder world which is already given for the assignment.
+![map](https://github.com/aayush11101998/Research-Track-1-assignment-2/blob/master/src/project/world/tracciato.png)
 The controller node guides the robot to follow the track without any collision and also it offers services to increase or decrease the speed of the robot.
 The program node is used for providing correct services to controller.
 
@@ -55,4 +56,5 @@ The controller sends request to the program to advertise the service once it adv
 
 The service racetrack.srv defined in srv folder it takes the char commands and gives output speed(float 32)
 
- 
+ ## Result
+ The robot moves autonomously and also its speed is controllable.
