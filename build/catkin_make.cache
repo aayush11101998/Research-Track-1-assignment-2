@@ -1,0 +1,2 @@
+project
+-DCATKIN_DEVEL_PREFIX=/home/aayush/rstrack/assignments/devel -DCMAKE_INSTALL_PREFIX=/home/aayush/rstrack/assignments/install -G Unix Makefiles
