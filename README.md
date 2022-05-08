@@ -1,28 +1,28 @@
 # assignment-2_Research_Track-1
 
-##ABSTRACT 
+## ABSTRACT 
 A robot moves autonomously on a 2D TRACK and its speed can be controlled with help of a simple UI using keyboard keys "w" and "s" on the terminal. 
 
-##INTRODUCTION
+## INTRODUCTION
 This assignment is a simple replica of an autonomous robot moving on a 2D Track and its speed can be controlled. In order to make this possible there are 2 different programs required one to avoid robot from collision and another to control its speed. Details of which are described in Methodology section.
 
-##INSTALLATION AND RUNNING
+## INSTALLATION AND RUNNING
 
 Open three different sections in a terminal. On one section type "roscore &". Then follow the following steps
 
-###1. Use command "source devel/setup.bash" on your workspace root folder.
-###2. Then "Catkin_make"
-###3. "rosrun stage_ros stageros $(rospack find project)/world/my_world.world".
+### 1. Use command "source devel/setup.bash" on your workspace root folder.
+### 2. Then "Catkin_make"
+### 3. "rosrun stage_ros stageros $(rospack find project)/world/my_world.world".
 
 On the second section :
 
-###1. Repeat the first two commands from the first section mentioned above.
-###2. "rosrun project program"
+### 1. Repeat the first two commands from the first section mentioned above.
+### 2. "rosrun project program"
 
 On the third section :
 
-###1. Repeat the first two commands from the first section mentioned above.
-###2. "rosrun project controller"
+### 1. Repeat the first two commands from the first section mentioned above.
+### 2. "rosrun project controller"
 
 Now in the third section you will be able to find the following comments:
 
@@ -37,7 +37,7 @@ Be sure to let robot turn with slow speeds so that it doesn't crash in the walls
 
 The nodes work as shown from the rqt_graph:
 
-![Rqt_graph](Images/rqt_graph rstrack ass2.png)
+![Rqt_graph](https://github.com/aayush11101998/Research-Track-1-assignment-2/blob/master/Images/rqt_graph%20rstrack%20ass2.png)
 
 The stageros node is from the folder world which is already given for the assignment.
 The controller node guides the robot to follow the track without any collision and also it offers services to increase or decrease the speed of the robot.
